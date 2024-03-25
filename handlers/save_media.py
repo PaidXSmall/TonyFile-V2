@@ -124,7 +124,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             website = f"Rushidhar_{str_to_b64(str(SaveMessage.id))}"
         # share_link = f"{Config.REDIRECT_WEBSITE}/secured?start={quote_plus(encode_string(website))}"
         # share_link = f'https://telegram.me/Rushidhar_S13_1999_bot?start={website}'
-        share_link = f"{Config.REDIRECT_WEBSITE}/{website}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=Rushidhar_{str_to_b64(str(DB_OWN_CHANNEL))}_{str_to_b64(str(Own_SaveMessage.id))}_{str_to_b64(str(SaveMessage.id))}"
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
