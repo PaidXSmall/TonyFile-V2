@@ -4,18 +4,18 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", ""))
-	API_HASH = os.environ.get("API_HASH", "")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
-	BOT_ID = int(os.environ.get("BOT_ID", ""))
-	DATABASE_URL = os.environ.get("DATABASE_URL", "")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	UPDATES_CHANNEL_ID = os.environ.get("UPDATES_CHANNEL_ID", "")
-	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
+	API_ID = int(os.environ.get("API_ID", 12411512))
+	API_HASH = os.environ.get("API_HASH", "0417d4f5fa67431b3c1b984a712cdbe3")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6749516588:AAEGOSKs1BaW6BC8a4kS1viust8l_OkABuo")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Tony_FilesSharingbot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002036323594"))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "907308115"))
+	BOT_ID = int(os.environ.get("BOT_ID", "6749516588"))
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://mrtony:x@cluster0.bzsrmem.mongodb.net/?retryWrites=true&w=majority")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "Tony_Files")
+	UPDATES_CHANNEL_ID = os.environ.get("UPDATES_CHANNEL_ID", "-1001326077855")
+	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1002036323594))
+	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "12345678").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", False))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "").split()))
@@ -35,7 +35,7 @@ Send Me any Media or File.I can Work In Channel too Add Me to Channel with Edit 
 │
 ├🔹📡 **Hosted On: [Mᴏɢᴇɴɪᴜs](https://mogenius.com/) **
 │
-├🔸👨‍💻 **Developer: [Rᴜsʜɪᴅʜᴀʀ](https://telegram.me/rushidhar1999) **
+├🔸👨‍💻 **Developer: [Rᴜsʜɪᴅʜᴀʀ](https://telegram.me/KristyX_TG) **
 │
 ╰──[** 😎 🔅 [ Rᴜsʜɪᴅʜᴀʀ ] 🔅 😎 **]──⍟
 """
