@@ -13,7 +13,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
     try:
         user_message = cmd.text.replace("/start ","")
         user_message = f"https://telegram.me/{Config.BOT_USERNAME}?start={user_message}"
-    except: user_message = "https://telegram.me/Rushidhar1999"
+    except: user_message = "https://telegram.me/Kristy_TG"
 
     try:
         if Config.UPDATES_CHANNEL is not None:
@@ -22,7 +22,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
                 if user.status == enums.ChatMemberStatus.BANNED:
                     await bot.send_message(
                         chat_id=cmd.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact me [ RUSHIDHAR ](https://t.me/rushidhar1999).",
+                        text="Sorry Sir, You are Banned to use me. Contact me [ Kristyy ](https://t.me/Kristy_TG).",
                         disable_web_page_preview=True
                     )
                     return True
@@ -45,7 +45,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
             except Exception as e:
                 await bot.send_message(
                     chat_id=cmd.chat.id,
-                    text=f"Something went Wrong. Contact me [ RUSHIDHAR ](https://t.me/rushidhar1999).\n{e}",
+                    text=f"Something went Wrong. Contact me [ Kristyy ](https://t.me/Kristy_TG).\n{e}",
                     disable_web_page_preview=True
                 )
                 return True
