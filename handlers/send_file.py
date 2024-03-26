@@ -31,7 +31,7 @@ async def media_forward(bot: Client, USER_CUSTOM_DB, user_id: int, file_id: int)
 
 
 async def auto_delete_thread(bot, msg):
-    await asyncio.sleep(120)
+    await asyncio.sleep(2400)
     return await bot.delete_messages(msg.chat.id, msg.id)
 
 
