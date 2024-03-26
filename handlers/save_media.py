@@ -33,7 +33,7 @@ async def forward_to_own_channel(bot: Client, message: Message, editable: Messag
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")]
+                        [InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")]
                     ]
                 )
             )
@@ -52,7 +52,7 @@ async def forward_to_channel(bot: Client, message: Message, editable: Message):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")]
+                        [InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")]
                     ]
                 )
             )
@@ -104,7 +104,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             text=message_ids_str,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")
+                InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")
             ]])
         )
         try:
@@ -113,17 +113,17 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
                 text=message_ids_own_str,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")
+                    InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")
                 ]])
             )
         except:
             Own_SaveMessage = False
         if Own_SaveMessage:
-            website = f"Rushidhar_{str_to_b64(str(DB_OWN_CHANNEL))}_{str_to_b64(str(Own_SaveMessage.id))}_{str_to_b64(str(SaveMessage.id))}"
+            website = f"kristyy_{str_to_b64(str(DB_OWN_CHANNEL))}_{str_to_b64(str(Own_SaveMessage.id))}_{str_to_b64(str(SaveMessage.id))}"
         else:
-            website = f"Rushidhar_{str_to_b64(str(SaveMessage.id))}"
+            website = f"kristyy_{str_to_b64(str(SaveMessage.id))}"
         # share_link = f"{Config.REDIRECT_WEBSITE}/secured?start={quote_plus(encode_string(website))}"
-        # share_link = f'https://telegram.me/Rushidhar_S13_1999_bot?start={website}'
+        # share_link = f'https://telegram.me/kristyy_S13_1999_bot?start={website}'
         share_link = f"{Config.REDIRECT_WEBSITE}/{website}"
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
@@ -147,7 +147,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")]
+                    [InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")]
                 ]
             )
         )
@@ -181,11 +181,11 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
         forwarded_msg = await message.forward(Config.DB_CHANNEL)
         file_er_id = str(forwarded_msg.id)
         if DB_OWN_CHANNEL and file_er_own_id:
-            website = f"Rushidhar_{str_to_b64(str(DB_OWN_CHANNEL))}_{str_to_b64(file_er_own_id)}_{str_to_b64(file_er_id)}"
+            website = f"kristyy_{str_to_b64(str(DB_OWN_CHANNEL))}_{str_to_b64(file_er_own_id)}_{str_to_b64(file_er_id)}"
         else:
-            website = f"Rushidhar_{str_to_b64(file_er_id)}"
+            website = f"kristyy_{str_to_b64(file_er_id)}"
         # share_link = f"{Config.REDIRECT_WEBSITE}/secured?start={quote_plus(encode_string(website))}"
-        # share_link = f'https://telegram.me/Rushidhar_S13_1999_bot?start={website}'
+        # share_link = f'https://telegram.me/kristyy_S13_1999_bot?start={website}'
         share_link = f"{Config.REDIRECT_WEBSITE}/{website}"
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\nUser Full Name : {message.from_user.first_name} {message.from_user.last_name if message.from_user.last_name else ''}\nUser Name : {message.from_user.mention}\nUser ID : {message.from_user.id}\nGot File Link!",
@@ -216,7 +216,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")]
+                        [InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")]
                     ]
                 )
             )
@@ -231,7 +231,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Owner", url ="https://telegram.me/rushidhar1999")]
+                    [InlineKeyboardButton("Owner", url ="https://telegram.me/Kristy_TG")]
                 ]
             )
         )
