@@ -76,12 +76,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeStartMessage")
+                        InlineKeyboardButton("", callback_data="aboutbot"),
+                        InlineKeyboardButton("", callback_data="aboutdevs"),
+                        InlineKeyboardButton("", callback_data="closeStartMessage")
                     ],
                     [
-                        InlineKeyboardButton("Source Codes of Bot", url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Mah Updates Channel", url="https://t.me/Tony_Files")
                     ]
                 ]
             )
@@ -138,7 +138,7 @@ async def start(bot: Client, cmd: Message):
                     await send_media_and_reply(bot, Config.DB_CHANNEL, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
             try:
                 sent_all_files = await cmd.reply_text(
-                    f"**Files will be Deleted After 2 min ⏰**\n",
+                    f"**Files will be Deleted After 40 min ⏰**\n",
                     disable_web_page_preview=True, quote=True)
                 delete = threading.Thread(
                     target=lambda: asyncio.run(auto_delete_thread(bot, sent_all_files))
@@ -198,7 +198,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -232,7 +232,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -266,7 +266,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -313,7 +313,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -347,7 +347,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -381,7 +381,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -442,7 +442,7 @@ async def main(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(
             chat_id=message.chat.id,
-            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/rushidhar1999'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
+            text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/Kristy_TG'>CLICK HERE FOR SUPPORT </a></b> \n\n {e}",
             disable_web_page_preview=True,
         )
 
@@ -455,7 +455,7 @@ async def main(bot: Client, message: Message):
         return
 
     if message.from_user.id in Config.BANNED_USERS:
-        await message.reply_to_message.reply_text("Sorry, You are banned!\n\nContact Me [ Rushidhar ](https://telegram.me/rushidhar1999)",
+        await message.reply_to_message.reply_text("Sorry, You are banned!\n\nContact Me [ kristyy ](https://telegram.me/Kristy_TG)",
                                  disable_web_page_preview=True)
         return
 
@@ -497,7 +497,7 @@ async def main(bot: Client, message: Message):
         return
 
     if message.from_user.id in Config.BANNED_USERS:
-        await message.reply_text("Sorry, You are banned!\n\nContact Me [ Rushidhar ](https://telegram.me/rushidhar1999)",
+        await message.reply_text("Sorry, You are banned!\n\nContact Me [ kristyy ](https://telegram.me/Kristy_TG)",
                                  disable_web_page_preview=True)
         return
 
@@ -684,12 +684,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Mah Updates Channel", url="https://t.me/Tony_Files")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("", callback_data="gotohome"),
+                        InlineKeyboardButton("", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -706,8 +705,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="https://github.com/PredatorHackerzZ/TG-FileStore")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("", callback_data="aboutbot"),
+                        InlineKeyboardButton("", callback_data="gotohome")
                     ]
                 ]
             )
@@ -720,12 +719,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeStartMessage")
+                        InlineKeyboardButton("", callback_data="aboutbot"),
+                        InlineKeyboardButton("", callback_data="aboutdevs"),
+                        InlineKeyboardButton("", callback_data="closeStartMessage")
                     ],
                     [
-                        InlineKeyboardButton("Source Codes of Bot", url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Mah Updates Channel", url="https://t.me/Tony_Files")
                     ]
                 ]
             )
