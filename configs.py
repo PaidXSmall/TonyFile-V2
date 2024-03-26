@@ -8,7 +8,7 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH", "0417d4f5fa67431b3c1b984a712cdbe3")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6749516588:AAEGOSKs1BaW6BC8a4kS1viust8l_OkABuo")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Tony_FilesSharingbot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002036323594"))
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001650457516"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "907308115"))
 	BOT_ID = int(os.environ.get("BOT_ID", "6749516588"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://tonyw:w@cluster0.zwgsk8r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
