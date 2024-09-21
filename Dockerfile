@@ -1,4 +1,4 @@
-FROM rushidhar/file-store:stable
+FROM python:3.10.8-slim-buster
 
 WORKDIR /app
 
